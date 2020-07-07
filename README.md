@@ -3,7 +3,7 @@ Image for running Oracle Instant Client. Due to oracle license restrictions imag
 ``This image for development use only``
 
 # Usage
-Download Instant Client file from [Oracle site](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html) and copy this one to **install_folder**.  
+Download a suitable Instant Client RPM-File from [Oracle site](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html) and copy this one to **install_folder**.  
 Run a container and the client-package will be installed:  
 ```sh
 docker run --name oracle-instantclient -v <install_folder>:/install oracle-instantclient:<client-version>
