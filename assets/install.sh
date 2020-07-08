@@ -5,8 +5,6 @@ source /assets/colorecho
 trap "echo_red '******* ERROR: Something went wrong.'; exit 1" SIGTERM
 trap "echo_red '******* Caught SIGINT signal. Stopping...'; exit 2" SIGINT
 
-ls -al /install
-
 if [ ! -f /install/oracle-instantclient*.rpm ]; then
 	echo_red "No rpm-file for Oracle Instant Client found!"
 	exit 1
